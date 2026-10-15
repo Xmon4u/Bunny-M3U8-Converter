@@ -2,6 +2,8 @@
 
 <div align="center">
 
+[![Latest Release](https://img.shields.io/github/v/release/Xmon4u/Bunny-M3U8-Converter?color=brightgreen&label=Release&logo=github)](https://github.com/Xmon4u/Bunny-M3U8-Converter/releases/latest)
+[![Direct Download](https://img.shields.io/badge/Download-BunnyM3U8.exe-success?style=flat&logo=windows)](https://github.com/Xmon4u/Bunny-M3U8-Converter/releases/latest/download/BunnyM3U8.exe)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com/Xmon4u/Bunny-M3U8-Converter)
@@ -54,13 +56,11 @@ The converter accepts flexible and mixed inputs directly from the clipboard:
 
 ## 🚀 Quick Start
 
-### 1. Run Pre-built Executable (Windows)
+### 1. Download & Run Executable (Windows)
 
-If you have already built or downloaded the standalone binary:
-```bash
-dist\BunnyM3U8.exe
-```
-Or simply double-click **`run.bat`**.
+No Python setup or installation required:
+1. 📥 **[Download Latest BunnyM3U8.exe](https://github.com/Xmon4u/Bunny-M3U8-Converter/releases/latest/download/BunnyM3U8.exe)** from the releases page.
+2. Double-click **`BunnyM3U8.exe`** (or run `run.bat`) to launch the application.
 
 ---
 
