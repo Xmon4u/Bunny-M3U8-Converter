@@ -1,4 +1,4 @@
-# Bunny Stream to M3U8 Converter 🎥🐇
+# Bunny Stream to M3U8 Converter
 
 <div align="center">
 
@@ -10,35 +10,35 @@
 [![GUI](https://img.shields.io/badge/GUI-CustomTkinter-orange.svg)](https://github.com/TomSchimansky/CustomTkinter)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](test_bunny.py)
 
-A sleek, modern desktop and CLI utility to extract direct HLS `playlist.m3u8` stream URLs from Bunny Stream play links, embed pages, iframe snippets, and token-signed links.
+A desktop and CLI utility that extracts direct HLS `playlist.m3u8` stream URLs from Bunny Stream play links, embed pages, iframe snippets, and token-signed links.
 
-[Key Features](#-key-features) •
-[Accepted Formats](#-accepted-input-formats) •
-[Installation & Usage](#-quick-start) •
-[CLI Mode](#-cli-usage) •
-[Build Executable](#-build-standalone-windows-exe) •
-[Testing](#-running-tests)
+[Key Features](#key-features) •
+[Accepted Formats](#accepted-input-formats) •
+[Installation & Usage](#quick-start) •
+[CLI Mode](#cli-usage) •
+[Build Executable](#build-standalone-windows-exe) •
+[Testing](#running-tests)
 
 </div>
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **🚀 Dual Mode Operation**:
-  - **Modern GUI**: Built with CustomTkinter featuring dark theme, smooth micro-interactions, batch queue management, and 1-click clipboard copy.
+- **Dual Mode Operation**:
+  - **GUI**: Built with CustomTkinter featuring a dark theme, batch queue management, and one-click clipboard copy.
   - **CLI / Headless**: Streamlined CLI for scripts, piping, automated pipelines, or server environments.
-- **⚡ Smart Batch Processing**: Paste hundreds of mixed links or raw iframe code snippets at once. Processes links asynchronously with real-time status updates.
-- **🛡️ Robust Extraction Pipeline**:
-  - Automatically queries both modern player pages (`player.mediadelivery.net`) and legacy iframe embeds (`iframe.mediadelivery.net`).
-  - Fallback CDN address resolver: Constructs direct CDN endpoints even when web pages only expose video thumbnails.
+- **Smart Batch Processing**: Paste hundreds of mixed links or raw iframe code snippets at once. Processes links asynchronously with real-time status updates.
+- **Robust Extraction Pipeline**:
+  - Queries both modern player pages (`player.mediadelivery.net`) and legacy iframe embeds (`iframe.mediadelivery.net`).
+  - Fallback CDN address resolver: constructs direct CDN endpoints even when web pages only expose video thumbnails.
   - Preserves token and expiry queries (`?token=...&expires=...`) seamlessly.
-- **📦 Zero-Failure Tolerance**: If a single URL in a batch is invalid, only that row is flagged — all valid links continue processing without interruption.
-- **📋 Export Options**: Quick 1-click copy for individual links or batch-export all converted playlist links.
+- **Zero-Failure Tolerance**: If a single URL in a batch is invalid, only that row is flagged — all valid links continue processing without interruption.
+- **Export Options**: One-click copy for individual links or batch-export all converted playlist links.
 
 ---
 
-## 🎯 Accepted Input Formats
+## Accepted Input Formats
 
 The converter accepts flexible and mixed inputs directly from the clipboard:
 
@@ -50,17 +50,18 @@ The converter accepts flexible and mixed inputs directly from the clipboard:
 | **Token-Signed Link** | `https://player.mediadelivery.net/play/780046/UUID?token=abc123&expires=1700000000` |
 | **Raw HTML Embed Code**| `<iframe src="https://player.mediadelivery.net/embed/780046/UUID" loading="lazy" ...></iframe>` |
 | **Direct Playlist URL**| `https://vz-abc123.b-cdn.net/UUID/playlist.m3u8` |
-| **Multi-line Batch** | Paste any mixture of the above, one per line or mixed within raw HTML text |
+| **Multi-line Batch** | Any mixture of the above, one per line or mixed within raw HTML text |
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Download & Run Executable (Windows)
 
 No Python setup or installation required:
-1. 📥 **[Download Latest BunnyM3U8.exe](https://github.com/Xmon4u/Bunny-M3U8-Converter/releases/latest/download/BunnyM3U8.exe)** from the releases page.
-2. Double-click **`BunnyM3U8.exe`** (or run `run.bat`) to launch the application.
+
+1. [Download the latest BunnyM3U8.exe](https://github.com/Xmon4u/Bunny-M3U8-Converter/releases/latest/download/BunnyM3U8.exe) from the releases page.
+2. Double-click `BunnyM3U8.exe` (or run `run.bat`) to launch the application.
 
 ---
 
@@ -69,22 +70,20 @@ No Python setup or installation required:
 Clone the repository and install dependencies:
 
 ```bash
-# Clone the repository
 git clone https://github.com/Xmon4u/Bunny-M3U8-Converter.git
 cd Bunny-M3U8-Converter
 
-# Install dependencies
 pip install -r requirements.txt
 
 # Launch GUI
 python bunny_m3u8.py
 ```
 
-> **Note for Linux / macOS users:** You can also run `./run.sh` to quickly launch the application.
+> **Note for Linux / macOS users:** You can also run `./run.sh` to launch the application.
 
 ---
 
-## 💻 CLI Usage
+## CLI Usage
 
 You can use the tool directly from terminal or in shell scripts.
 
@@ -120,7 +119,7 @@ options:
 
 ---
 
-## 🔨 Build Standalone Windows EXE
+## Build Standalone Windows EXE
 
 To generate a standalone, single-file `.exe` with icon and CustomTkinter assets bundled:
 
@@ -135,7 +134,7 @@ dist\BunnyM3U8.exe
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 The test suite validates parsing, query preservation, token handling, and fallback URL extraction:
 
@@ -143,11 +142,11 @@ The test suite validates parsing, query preservation, token handling, and fallba
 python -m unittest test_bunny.py
 ```
 
-All 13 unit test cases will run against mocked HTTP endpoints and edge-case inputs.
+All 13 unit test cases run against mocked HTTP endpoints and edge-case inputs.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Bunny-M3U8-Converter/
@@ -168,14 +167,14 @@ Bunny-M3U8-Converter/
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
-Crafted with ❤️ by **[XMON4U](https://github.com/Xmon4u)**
+Built by **[XMON4U](https://github.com/Xmon4u)**
 
 </div>
